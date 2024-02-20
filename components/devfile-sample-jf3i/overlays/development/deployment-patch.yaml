@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jf3i
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0014-tenant/tkrw-pr714-0075-0014-app/devfile-sample-jf3i@sha256:ed06babee322cda58f6cfb917983bb98229d247575e95293f7fccc8fb2e9cd3b
+        name: my-nodejs
+        resources: {}
+status: {}
